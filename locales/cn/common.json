@@ -1,0 +1,329 @@
+{
+    "Top-Search": "搜索产品（例如鱼、苹果、油）",
+  
+    "/=================*Top Menu*=================/": "",
+  
+    "HOME": "主页",
+    "About Us": "关于我们",
+    "Products": "产品",
+    "FAQ": "常见问题",
+    "Pages": "页面",
+    "Offers": "优惠",
+    "Categories": "分类",
+    "Contact Us": "联系我们",
+    "Privacy Policy": "隐私政策",
+    "Terms & Conditions": "条款与条件",
+    "My account": "我的账户",
+    "Login": "登录",
+    "Call Us": "我们全天候提供帮助，致电：",
+    "sliderH1": "通过单一易用的管理面板控制POS和电子商务网站",
+    "Ckeckout": "结账",
+  
+    "search-placeholder": "搜索产品（例如鱼、苹果、油）",
+  
+    "/=================*Top Slider*=================/": "",
+  
+    "Slider1Title": "保证最佳质量的产品！",
+    "Slider1description": "显著促进有效链接，推动前进流程……",
+  
+    "Slider2Title": "最好的不同类型杂货店",
+    "Slider2description": "快速聚合增强的网络以支持新兴产品……",
+  
+    "Slider3Title": "品质新鲜保证！",
+    "Slider3description": "内在地以性能为基础设计产品，而不是准确的收益……",
+  
+    "Slider-btn": "立即购物",
+  
+    "/=================*page*==================/": "",
+    "offer-page": "优惠",
+    "checkout-page": "结账",
+    "faq-page": "常见问题",
+    "about-us-page": "关于我们",
+    "contact-us-page": "联系我们",
+    "privacy-policy-page": "隐私政策",
+    "terms-and-conditions-page": "条款与条件",
+    "not-found-page": "404",
+  
+    "/=================*Offer Card*=================/": "",
+    "mega-offer": "特大优惠",
+    "OfferCard-Title": "最新超级折扣活动优惠码",
+  
+    "/=================*Banner*=================/": "",
+  
+    "Banner-title-span-text": "100%天然优质",
+    "Banner-title-text": "有机产品",
+    "Banner-paragraph-text": "查看我们最新的折扣产品并获得特别的",
+    "Banner-link-text": "折扣产品",
+    "Banner-btn-text": "立即购物",
+  
+    "/=================*Featured Categories*=================/": "",
+  
+    "Featured-title": "精选分类",
+    "Featured-sub-title": "从这些精选分类中选择您需要的产品。",
+  
+    "/=================*popular products*=================/": "",
+  
+    "popular-products-title": "每日购物的热门产品",
+    "popular-products-sub-title": "查看本周我们所有的热门产品。您可以从这个列表中选择您每日所需的产品，并获得免费配送的特别优惠。",
+  
+    "/=================*promotional banner*=================/": "",
+  
+    "promotional-banner-title-span-text": "有机产品和食品",
+    "promotional-banner-title-text": "快速送货到",
+    "promotional-banner-title-span": "您家",
+    "promotional-banner-paragraph-text": "在我们的商店中有许多产品可供选择，从我们的KachaBazar商店中挑选您每日需要的产品，并获得特别优惠。查看我们最新的折扣产品并获得特别折扣。",
+    "promotional-banner-link-text": "下载应用程序",
+  
+    "/=================*Discounted Products*=================/": "",
+  
+    "discounted-products-title": "最新折扣产品",
+    "discounted-products-paragraph-text": "在下方查看我们最新的折扣产品。从这里选择您的每日所需，并享受免费配送的特别折扣。",
+  
+    "/=================*Feature Promo*=================/": "",
+  
+    "featurePromo1-title": "免费配送",
+    "featurePromo1-info": "满500.00美元",
+  
+    "featurePromo2-title": "24/7支持",
+    "featurePromo2-info": "随时可用",
+  
+    "featurePromo3-title": "安全支付",
+    "featurePromo3-info": "完全安全",
+  
+    "featurePromo4-title": "最新优惠",
+    "featurePromo4-info": "最高20%折扣",
+  
+    "/=================*Footer Top*=================/": "",
+  
+    "footer-top-title": "从我们的KachaBazar商店获取您的每日所需",
+    "footer-top-paragraph-text": "在我们的商店中有许多产品可供选择，从我们的KachaBazar商店中挑选您每日需要的产品，并获得特别优惠。",
+  
+    "/=================*Footer *=================/": "",
+  
+    "footer-menu-title": "公司",
+    "footer-about-us": "关于我们",
+    "footer-contact-us": "联系我们",
+    "footer-careers": "职业",
+    "footer-news": "最新消息",
+  
+    "footer-top-category": "顶级分类",
+    "footer-top-category-fish-meat": "鱼类和肉类",
+    "footer-top-category-soft-drinks": "软饮料",
+    "footer-top-category-baby-care": "婴儿护理",
+    "footer-top-category-beauty-health": "美容与健康",
+  
+    "footer-my-account-title": "我的账户",
+    "footer-my-account-dashboard": "仪表板",
+    "footer-my-account-myOrders": "我的订单",
+    "footer-my-account-recentOrders": "最近的订单",
+    "footer-my-account-updatedProfile": "更新的资料",
+  
+    "footer-address": "987 Andre Plain Suite High Street 838, Lake Hestertown, 美国",
+    "footer-tell": "电话：02.356.1666",
+    "footer-email": "电子邮件：ccruidk@test.com",
+  
+    "footer-follow-us": "关注我们",
+    "footer-call-us": "立即致电我们！",
+  
+    "/=================* about us *=================/": "",
+
+    "about-page-title": "关于我们",
+    "about-section-title": "欢迎来到我们的KachaBazar",
+    "about-section-top-paragraph1": "整体性地捕捉平行指标和功能性投资回报率。在有效的场景之前无缝地彻底变革无错误的内部或有机来源。逐步激励最先进的应用程序以提高有效的智力资本。通过尖端的模式可靠地利用现有的独特思维共享。积极拖延团队建设范式，协调以客户为中心的完全透明的内部。",
+    "about-section-top-paragraph2": "动态地接受多样的客户服务和已安装的基础范式。可信地捕捉企业范围内的体验以实现端到端的数据。专业地品牌化灵活的对齐和成本效益的架构。热情地以战略主题领域鼓励无缝社区的革命性指标。",
+    "about-section-top-paragraph3": "整体性地捕捉平行指标和功能性投资回报率。在有效的场景之前无缝地彻底变革无错误的内部或有机来源。逐步激励最先进的应用程序以提高有效的智力资本。通过尖端的模式可靠地利用现有的独特思维共享。积极拖延团队建设范式，协调以客户为中心的完全透明的内部。为高质量的网络重新概念化全球领导力。值得信赖地恢复扩展的系统阵列而不是准确的结果。合作地整合后端带宽而不在乎24/7的功能。值得信赖地使用主动思想而不是跨媒体核心竞争力。通过资源最大化服务独特地最大化专业最佳实践。为电子商务的必要性方便地架构跨单位的网络服务。",
+    "about-section-top-paragraph4": "在单对单的场景之前适当地可视化市场驱动的数据。通过直观的供应链合作地产品化多功能的投资回报率。热情地捕捉革命性的价值和以过程为中心的服务。在可互操作的市场之后专业地利用直观信息。在细颗粒来源之前交互地革新面向未来的价值。动态地接受多样的客户服务和已安装的基础范式。可信地捕捉企业范围内的体验以实现端到端的数据。专业地品牌化灵活的对齐和成本效益的架构。热情地以战略主题领域鼓励无缝社区的革命性指标。",
+    "about-listed-products-box-title": "产品列表",
+    "about-listed-products-box-text": "在垂直方向之后动态地转变团队驱动的合作关系。",
+    "about-customer-box-title": "可爱的顾客",
+    "about-customers-box-text": "在不影响性能的情况下胜任地产品化虚拟模型。",
+    "about-our-founder-title": "我们的创始人",
+    "about-our-founder-paragraph": "我们是公正独立的，每天我们都创造独特、世界级的重新中介后端供应计划。",
+    "co-founder-executive": "联合创始人 & 执行官",
+    "chief-executive": "首席执行官",
+    "co-founder-chairman": "联合创始人，董事长",
+    "chief-strategy-officer": "首席战略官",
+    "hr-officer": "人力资源官",
+    "lead-developer": "首席开发者",
+    
+    "/=================* 联系我们 *=================/": "",
+    
+    "contact-page-title": "联系我们",
+    
+    "contact-page-box1-title": "通过电子邮件联系我们",
+    "contact-page-box1-info": "通过客户导向的对齐交互地增长以过程为中心的完全链接。",
+    
+    "contact-page-box2-title": "致电我们",
+    "contact-page-box2-info": "在点击和实体商店之间显著地传播聚焦的解决方案。",
+    
+    "contact-page-box3-title": "地址",
+    "contact-page-box3-info": "Cecilia Chapman, 561-4535 Nulla LA, United States 96522",
+    
+    "contact-page-form-title": "对于任何支持，请发送您的查询",
+    "contact-page-form-paragraph": "通过抄袭战略用户和标准化基础设施，合作地推广以客户为中心的融合。",
+    
+    "contact-page-form-input-name": "您的姓名",
+    "contact-page-form-plaholder-name": "输入您的姓名",
+    "contact-page-form-input-email": "您的电子邮件",
+    "contact-page-form-plaholder-email": "输入您的电子邮件",
+    "contact-page-form-input-subject": "主题",
+    "contact-page-form-plaholder-subject": "输入主题",
+    "contact-page-form-input-message": "消息",
+    "contact-page-form-plaholder-message": "在此写下您的消息",
+    "contact-page-form-send-btn": "发送消息",
+    
+    "/=================* 单个产品更多信息 *=================/": "",
+    
+    "moreInfo": "更多信息",
+    "showLess": "显示更少",
+    "stockOut": "缺货",
+    "inStock": "有货",
+    "addToCart": "加入购物车",
+    "category": "分类",
+    "shareYourSocial": "分享到您的社交网络",
+    "shareYourSocialText": "通过社交网络分享此产品以获得大量流量",
+    "relatedProducts": "相关产品",
+    "stock": "库存",
+
+
+
+    "/=================* 购物车抽屉 *=================/": "",
+
+"shoppingCartDrawerTitle": "购物车",
+"closeBtn": "关闭",
+"cartEmptyTitle": "您的购物车为空",
+"cartEmptyText": "您的购物车中没有添加商品。请添加商品到您的购物车列表中。",
+"proceedToCheckoutBtn": "继续结账",
+
+"/=================* 登录弹窗 *=================/": "",
+
+"loginTitle": "登录",
+"loginBoxText": "使用您的电子邮件和密码登录",
+"email": "电子邮件",
+"password": "密码",
+"forgotPassword": "忘记密码？",
+"loginBtn": "登录",
+"or": "或者",
+"notAccount": "没有账号",
+"alreadyHaveAccount": "已经有账号？",
+"register": "注册",
+
+"/=================* 注册 *=================/": "",
+
+"signingUp": "注册中",
+"createAccount": "创建账号",
+"name": "名字",
+
+"items": "物品",
+
+"/=================* 结账 *=================/": "",
+
+"personalDetails": "个人信息",
+"firstName": "名字",
+"lastName": "姓",
+"emailAddress": "电子邮件地址",
+"phoneNumber": "手机号码",
+
+"shippingDetails": "配送信息",
+"streetAddress": "街道地址",
+"city": "城市",
+"country": "国家",
+"zIPPostal": "邮政编码",
+"shippingCost": "配送费用",
+"paymentDetails": "支付方式",
+"cashOnDelivery": "货到付款",
+"creditCard": "信用卡",
+"payPal": "PayPal",
+
+"continueShoppingBtn": "继续购物",
+"confirmOrderBtn": "确认订单",
+"processing": "处理中",
+
+"orderSummary": "订单总结",
+"applyBtn": "应用",
+"couponCode": "输入您的优惠码",
+"subtotal": "小计",
+
+"discount": "折扣",
+"totalCost": "总费用",
+
+"shippingMethod": "配送方式",
+
+"/=================* 发票 *=================/": "",
+
+"invoice": "发票",
+"date": "日期",
+"invoiceNo": "发票号",
+"invoiceTo": "开票至",
+"sr": "序号",
+"productName": "产品名称",
+"quantity": "数量",
+"itemPrice": "单价",
+"amount": "金额",
+"paymentMethod": "支付方式",
+
+"totalAmount": "总金额",
+"downloadInvoice": "下载发票",
+"printInvoice": "打印发票",
+"thankyou": "谢谢",
+"orderReceivedMsg": "您的订单已收到！",
+
+"/=================* 我的账户 *=================/": "",
+
+"dashboard": "仪表板",
+"myOrders": "我的订单",
+"updateProfile": "更新个人资料",
+"changePassword": "更改密码",
+"logout": "登出",
+"noOrder": "您还没有订单！",
+
+"action": "操作",
+"id": "ID",
+"oderTime": "下单时间",
+"method": "方式",
+"status": "状态",
+"total": "总计",
+"details": "详情",
+
+"next": "下一页",
+"previous": "上一页",
+
+"dashboardText": "这是用户仪表板",
+"totalOrder": "总订单数",
+"pendingOrder": "待处理订单",
+"processingOrder": "处理中订单",
+"completeOrder": "已完成订单",
+
+"recentOrder": "最近订单",
+
+"photo": "照片",
+"fullName": "全名",
+"yourAddress": "您的地址",
+"phoneMobile": "电话/手机",
+"yourMobile": "您的手机号码",
+"updateProfileBtn": "更新个人资料",
+"dragYourImageHere": "将您的图片拖放到此处",
+"currentPassword": "当前密码",
+"yourCurrentPassword": "您的当前密码",
+"newPassword": "新密码",
+"yourNewPassword": "您的新密码",
+"changePasswordBtn": "更改密码",
+
+"/=================* 搜索 *=================/": "",
+
+"loadMoreBtn": "加载更多",
+"totalI": "总计",
+"itemsFound": "项找到",
+"sortByPrice": "按价格排序",
+"lowToHigh": "从低到高",
+"highToLow": "从高到低",
+"sorryText": "抱歉，我们找不到此产品",
+
+"/=================* 常见问题 *=================/": "",
+
+"faq-title": "常见问题",
+"Faq-question1": "KachaBazar是如何运作的？",
+"Faq-question1-ans": "是的。您可以随时取消订阅。您的订阅将一直有效，直到当前期限（月或年）结束，但它不会自动续订。除非您手动删除账号，您的账号和所有数据将在您的订阅变为非活跃后60天内被删除。",
+"Faq-question2": "我可以随时取消订阅吗？",
+"Faq-question2-ans": "有效地启动无错误的渠道与高效的投资回报率。通过最佳实践内在地设想世界级的数据。有效地使授权的电子商务者在跨单位服务之后启用。通过合作界面独特地加速无缝的电子商务者。单调地在错误免费的场景中加速客户导向的元服务。",
+  }
