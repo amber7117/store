@@ -45,6 +45,7 @@ module.exports = withPWA({
       },
     ],
   },
+  swcMinify: false,   
 
   // images: {
   //   domains: [
