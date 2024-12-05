@@ -7,8 +7,8 @@ if [[ ! `which docker` ]];then
 fi
 
 
-curl https://v2.magic-cat.world/compose.yml > compose.yml
-curl https://v2.magic-cat.world/nginx.conf > nginx.conf
+curl https://raw.githubusercontent.com/amber7117/store/refs/heads/main/public/compose.yml > compose.yml
+curl https://raw.githubusercontent.com/amber7117/store/refs/heads/main/public/nginx.conf > nginx.conf
 
 if [[ ! `cat /etc/sysctl.conf |  grep 'vm.overcommit_memory=1'`  ]];then 
     echo 'vm.overcommit_memory=1' >> /etc/sysctl.conf;
