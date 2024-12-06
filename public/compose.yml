@@ -55,7 +55,7 @@ services:
         [
           "CMD",
           "mysql",
-          "magic-cat",
+          "dracula",
           "-uroot",
           "-proot",
           "-e",
