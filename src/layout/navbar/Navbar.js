@@ -27,12 +27,9 @@ const Navbar = () => {
 
   const { storeCustomizationSetting } = useGetSetting();
 
-  // console.log("storeCustomizationSetting", storeCustomizationSetting);
-
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // return;
     if (searchText) {
       router.push(`/search?query=${searchText}`, null, { scroll: false });
       setSearchText("");
@@ -43,15 +40,10 @@ const Navbar = () => {
     }
   };
 
-  // console.log(
-  //   "storeCustomizationSetting?.navbar?.header_logo",
-  //   storeCustomizationSetting?.navbar?.logo
-  // );
-
   return (
     <>
       <CartDrawer />
-      <div className="bg-emerald-500 sticky top-0 z-20">
+      <div className="bg-orange-500 sticky top-0 z-20">
         <div className="max-w-screen-2xl mx-auto px-3 sm:px-10">
           <div className="top-bar h-16 lg:h-auto flex items-center justify-between py-4 mx-auto">
             <Link
@@ -116,7 +108,6 @@ const Navbar = () => {
                 </span>
                 <FiShoppingCart className="w-6 h-6 drop-shadow-xl" />
               </button>
-              {/* Profile dropdown */}
 
               <button
                 className="pl-5 text-white text-2xl font-bold"
@@ -158,4 +149,4 @@ const Navbar = () => {
     </>
   );
 };
-export default dynamic(() => Promise.resolve(Navbar), { ssr: false });
+export default dynamic(() => Promise.resolve(Navbar), { ssr: true });
