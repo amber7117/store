@@ -5,7 +5,6 @@ import { IoAdd, IoBagAddSharp, IoRemove } from "react-icons/io5";
 import { useCart } from "react-use-cart";
 
 //internal import
-
 import Price from "@components/common/Price";
 import Stock from "@components/common/Stock";
 import { notifyError } from "@utils/toast";
@@ -17,7 +16,7 @@ import ProductModal from "@components/modal/ProductModal";
 import ImageWithFallback from "@components/common/ImageWithFallBack";
 import { handleLogEvent } from "src/lib/analytics";
 
-const ProductCard = ({ product, attributes }) => {
+const ProductCard = ({ product }) => {
   const [modalOpen, setModalOpen] = useState(false);
 
   const { items, addItem, updateItemQuantity, inCart } = useCart();
@@ -34,20 +33,18 @@ const ProductCard = ({ product, attributes }) => {
       setModalOpen(!modalOpen);
       return;
     }
-    const { slug, variants, categories, description, ...updatedProduct } =
-      product;
     const newItem = {
-      ...updatedProduct,
-      title: showingTranslateValue(p?.title),
+      ...p,
+      title: showingTranslateValue(p?.title?.products),
       id: p._id,
       variant: p.prices,
       price: p.prices.price,
-      originalPrice: product.prices?.originalPrice,
+      originalPrice: p.prices.originalPrice,
     };
     addItem(newItem);
   };
 
-  const handleModalOpen = (event, id) => {
+  const handleModalOpen = (event) => {
     setModalOpen(event);
   };
 
@@ -66,8 +63,8 @@ const ProductCard = ({ product, attributes }) => {
               />
             </div>
             <div className="w-full lg:w-2/3 p-6">
-              <h2 className="text-2xl font-bold mb-2 text-gray-800">{showingTranslateValue(product?.title)}</h2>
-              <p className="text-gray-600 mb-4">{product?.description?.en || "No description available."}</p>
+              <h2 className="text-2xl font-bold mb-2 text-gray-800">{showingTranslateValue(product.title.products)}</h2>
+              <p className="text-gray-600 mb-4">{product.description.products}</p>
               <div className="flex items-center mb-4">
                 <span className="text-xl font-semibold text-green-500 mr-4">{currency}{product.prices.price}</span>
                 {product.prices.originalPrice > product.prices.price && (
@@ -106,10 +103,10 @@ const ProductCard = ({ product, attributes }) => {
       <div className="group box-border overflow-hidden flex flex-col items-center rounded-md shadow-sm bg-white relative" style={{ width: "200px", height: "360px" }}>
         <div
           onClick={() => {
-            handleModalOpen(!modalOpen, product._id);
+            handleModalOpen(!modalOpen);
             handleLogEvent(
               "product",
-              `opened ${showingTranslateValue(product?.title)} product modal`
+              `opened ${showingTranslateValue(product.title.products)} product modal`
             );
           }}
           className="relative flex justify-center cursor-pointer w-full"
@@ -142,7 +139,7 @@ const ProductCard = ({ product, attributes }) => {
         <div className="w-full px-3 text-center">
           <h2 className="text-heading truncate mt-2 block text-sm font-medium text-gray-600">
             <span className="line-clamp-2">
-              {showingTranslateValue(product?.title)}
+              {showingTranslateValue(product.title.products)}
             </span>
           </h2>
         </div>
