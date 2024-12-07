@@ -27,8 +27,6 @@ const ProductCard = ({ product, attributes }) => {
 
   const currency = globalSetting?.default_currency || "$";
 
-  // console.log('attributes in product cart',attributes)
-
   const handleAddItem = (p) => {
     if (p.stock < 1) return notifyError("Insufficient stock!");
 
@@ -56,20 +54,56 @@ const ProductCard = ({ product, attributes }) => {
   return (
     <>
       {modalOpen && (
-        <ProductModal
-          modalOpen={modalOpen}
-          setModalOpen={setModalOpen}
-          product={product}
-          currency={currency}
-          attributes={attributes}
-        />
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white w-full max-w-4xl rounded-lg shadow-lg flex flex-col lg:flex-row overflow-hidden">
+            <div className="w-full lg:w-1/3 bg-gray-100 flex items-center justify-center p-6">
+              <Image
+                src={product.image[0] || "https://res.cloudinary.com/ahossain/image/upload/v1655097002/placeholder_kvepfp.png"}
+                alt="product"
+                width={300}
+                height={300}
+                className="object-contain"
+              />
+            </div>
+            <div className="w-full lg:w-2/3 p-6">
+              <h2 className="text-2xl font-bold mb-2 text-gray-800">{showingTranslateValue(product?.title)}</h2>
+              <p className="text-gray-600 mb-4">{product?.description?.en || "No description available."}</p>
+              <div className="flex items-center mb-4">
+                <span className="text-xl font-semibold text-green-500 mr-4">{currency}{product.prices.price}</span>
+                {product.prices.originalPrice > product.prices.price && (
+                  <span className="text-gray-500 line-through">{currency}{product.prices.originalPrice}</span>
+                )}
+              </div>
+              <div className="mb-4">
+                <span className="text-sm font-semibold text-gray-600">Stock: {product.stock}</span>
+              </div>
+              <div className="flex items-center space-x-4 mb-6">
+                <button
+                  className="px-4 py-2 bg-gray-200 rounded text-gray-700"
+                  onClick={() => updateItemQuantity(product._id, Math.max(1, items.find((item) => item.id === product._id)?.quantity - 1 || 1))}
+                >
+                  -
+                </button>
+                <span>{items.find((item) => item.id === product._id)?.quantity || 1}</span>
+                <button
+                  className="px-4 py-2 bg-gray-200 rounded text-gray-700"
+                  onClick={() => updateItemQuantity(product._id, (items.find((item) => item.id === product._id)?.quantity || 1) + 1)}
+                >
+                  +
+                </button>
+              </div>
+              <button
+                className="px-6 py-3 bg-emerald-500 text-white rounded-lg hover:bg-emerald-600"
+                onClick={() => handleAddItem(product)}
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
       )}
 
-      <div className="group box-border overflow-hidden flex rounded-md shadow-sm pe-0 flex-col items-center bg-white relative">
-        <div className="w-full flex justify-between">
-          <Stock product={product} stock={product.stock} card />
-          <Discount product={product} />
-        </div>
+      <div className="group box-border overflow-hidden flex flex-col items-center rounded-md shadow-sm bg-white relative" style={{ width: "200px", height: "360px" }}>
         <div
           onClick={() => {
             handleModalOpen(!modalOpen, product._id);
@@ -78,17 +112,25 @@ const ProductCard = ({ product, attributes }) => {
               `opened ${showingTranslateValue(product?.title)} product modal`
             );
           }}
-          className="relative flex justify-center cursor-pointer pt-2 w-full h-44"
+          className="relative flex justify-center cursor-pointer w-full"
+          style={{ height: "280px", padding: "10px" }}
         >
-          <div className="relative w-full h-full p-2">
+          <div className="relative w-full h-full">
             {product.image[0] ? (
-              <ImageWithFallback src={product.image[0]} alt="product" />
+              <ImageWithFallback
+                src={product.image[0]}
+                alt="product"
+                style={{ width: "100%", height: "100%", objectFit: "contain", borderRadius: "10px" }}
+              />
             ) : (
               <Image
                 src="https://res.cloudinary.com/ahossain/image/upload/v1655097002/placeholder_kvepfp.png"
                 fill
                 style={{
                   objectFit: "contain",
+                  width: "100%",
+                  height: "100%",
+                  borderRadius: "10px",
                 }}
                 sizes="100%"
                 alt="product"
@@ -97,84 +139,12 @@ const ProductCard = ({ product, attributes }) => {
             )}
           </div>
         </div>
-        <div className="w-full px-3 lg:px-4 pb-4 overflow-hidden">
-          <div className="relative mb-1">
-            <span className="text-gray-400 font-medium text-xs d-block mb-1">
-              {product.unit}
+        <div className="w-full px-3 text-center">
+          <h2 className="text-heading truncate mt-2 block text-sm font-medium text-gray-600">
+            <span className="line-clamp-2">
+              {showingTranslateValue(product?.title)}
             </span>
-            <h2 className="text-heading truncate mb-0 block text-sm font-medium text-gray-600">
-              <span className="line-clamp-2">
-                {showingTranslateValue(product?.title)}
-              </span>
-            </h2>
-          </div>
-
-          <div className="flex justify-between items-center text-heading text-sm sm:text-base space-s-2 md:text-base lg:text-xl">
-            <Price
-              card
-              product={product}
-              currency={currency}
-              price={
-                product?.isCombination
-                  ? product?.variants[0]?.price
-                  : product?.prices?.price
-              }
-              originalPrice={
-                product?.isCombination
-                  ? product?.variants[0]?.originalPrice
-                  : product?.prices?.originalPrice
-              }
-            />
-
-            {inCart(product._id) ? (
-              <div>
-                {items.map(
-                  (item) =>
-                    item.id === product._id && (
-                      <div
-                        key={item.id}
-                        className="h-9 w-auto flex flex-wrap items-center justify-evenly py-1 px-2 bg-emerald-500 text-white rounded"
-                      >
-                        <button
-                          onClick={() =>
-                            updateItemQuantity(item.id, item.quantity - 1)
-                          }
-                        >
-                          <span className="text-dark text-base">
-                            <IoRemove />
-                          </span>
-                        </button>
-                        <p className="text-sm text-dark px-1 font-serif font-semibold">
-                          {item.quantity}
-                        </p>
-                        <button
-                          onClick={() =>
-                            item?.variants?.length > 0
-                              ? handleAddItem(item)
-                              : handleIncreaseQuantity(item)
-                          }
-                        >
-                          <span className="text-dark text-base">
-                            <IoAdd />
-                          </span>
-                        </button>
-                      </div>
-                    )
-                )}{" "}
-              </div>
-            ) : (
-              <button
-                onClick={() => handleAddItem(product)}
-                aria-label="cart"
-                className="h-9 w-9 flex items-center justify-center border border-gray-200 rounded text-emerald-500 hover:border-emerald-500 hover:bg-emerald-500 hover:text-white transition-all"
-              >
-                {" "}
-                <span className="text-xl">
-                  <IoBagAddSharp />
-                </span>{" "}
-              </button>
-            )}
-          </div>
+          </h2>
         </div>
       </div>
     </>
