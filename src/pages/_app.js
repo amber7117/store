@@ -43,7 +43,7 @@ function MyApp({ Component, pageProps }) {
 
       // Track page view on route change
       const handleRouteChange = (url) => {
-        handlePageView(`/${router.pathname}`, "Kachabazar");
+        handlePageView(url, "GoGoGM");
       };
 
       // Set up event listeners
@@ -54,8 +54,6 @@ function MyApp({ Component, pageProps }) {
       };
     }
   }, [storeSetting]);
-
-  // console.log("storeSetting", storeSetting, "stripePromise", stripePromise);
 
   return (
     <>

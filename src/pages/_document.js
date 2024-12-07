@@ -21,7 +21,7 @@ class MyDocument extends Document {
             property="og:title"
             content={
               setting?.meta_title ||
-              "KachaBazar - React Grocery & Organic Food Store e-commerce Template"
+              "GoGoGM - Your Trusted Gift Card Marketplace"
             }
           />
           <meta property="og:type" content="eCommerce Website" />
@@ -29,17 +29,19 @@ class MyDocument extends Document {
             property="og:description"
             content={
               setting?.meta_description ||
-              "React Grocery & Organic Food Store e-commerce Template"
+              "GoGoGM is the ultimate platform for buying and selling gift cards. Experience secure, fast, and global access to top brands."
             }
           />
           <meta
             name="keywords"
-            content={setting?.meta_keywords || "ecommenrce online store"}
+            content={
+              setting?.meta_keywords || "gift cards, online marketplace, eCommerce, buy gift cards, sell gift cards"
+            }
           />
           <meta
             property="og:url"
             content={
-              setting?.meta_url || "https://kachabazar-store.vercel.app/"
+              setting?.meta_url || "https://gogogm.com"
             }
           />
           <meta

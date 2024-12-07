@@ -22,8 +22,6 @@ const Home = ({ popularProducts, discountProducts, attributes }) => {
   const { isLoading, setIsLoading } = useContext(SidebarContext);
   const { loading, error, storeCustomizationSetting } = useGetSetting();
 
-  // console.log("storeCustomizationSetting", storeCustomizationSetting);
-
   useEffect(() => {
     if (router.asPath === "/") {
       setIsLoading(false);
@@ -68,7 +66,6 @@ const Home = ({ popularProducts, discountProducts, attributes }) => {
                         <CMSkeleton
                           count={1}
                           height={30}
-                          // error={error}
                           loading={loading}
                           data={storeCustomizationSetting?.home?.feature_title}
                         />
@@ -101,7 +98,6 @@ const Home = ({ popularProducts, discountProducts, attributes }) => {
                       <CMSkeleton
                         count={1}
                         height={30}
-                        // error={error}
                         loading={loading}
                         data={storeCustomizationSetting?.home?.popular_title}
                       />
@@ -154,7 +150,7 @@ const Home = ({ popularProducts, discountProducts, attributes }) => {
             {storeCustomizationSetting?.home?.delivery_status && (
               <div className="block mx-auto max-w-screen-2xl">
                 <div className="mx-auto max-w-screen-2xl px-4 sm:px-10">
-                  <div className="lg:p-16 p-6 bg-emerald-500 shadow-sm border rounded-lg">
+                  <div className="lg:p-16 p-6 bg-orange-500 shadow-sm border rounded-lg">
                     <CardTwo />
                   </div>
                 </div>
@@ -174,7 +170,6 @@ const Home = ({ popularProducts, discountProducts, attributes }) => {
                         <CMSkeleton
                           count={1}
                           height={30}
-                          // error={error}
                           loading={loading}
                           data={
                             storeCustomizationSetting?.home
@@ -186,7 +181,6 @@ const Home = ({ popularProducts, discountProducts, attributes }) => {
                         <CMSkeleton
                           count={5}
                           height={20}
-                          // error={error}
                           loading={loading}
                           data={
                             storeCustomizationSetting?.home
